@@ -1,0 +1,38 @@
+GET http://localhost:3000/disciplinas
+###
+
+POST http://localhost:3000/disciplinas
+Content-Type: application/json
+
+{
+  "nome": "Programação Web",
+  "cargaHoraria": 60,
+  "obrigatoria": true
+}
+###
+
+POST http://localhost:3000/disciplinas
+Content-Type: application/json
+
+{
+  "nome": "Estrutura de Dados",
+  "cargaHoraria": 80,
+  "obrigatoria": false
+}
+###
+
+GET http://localhost:3000/disciplinas/ab84a3f3-78d4-4774-ab84-b72d99e8ef25
+###
+
+PUT http://localhost:3000/disciplinas/ab84a3f3-78d4-4774-ab84-b72d99e8ef25
+Content-Type: application/json
+
+{
+  "nome": "Estrutura de Dados II",
+  "cargaHoraria": 90,
+  "obrigatoria": true
+}
+###
+
+DELETE http://localhost:3000/disciplinas/ab84a3f3-78d4-4774-ab84-b72d99e8ef25
+###
